@@ -1,0 +1,230 @@
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2017.6.15)  28 OCT 2017 13:17
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./zhixianyuyuan.tex
+(./zhixianyuyuan.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+! Undefined control sequence.
+l.1 \section
+            {直线与圆}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{直
+                线与圆}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 直 in font nullfont!
+Missing character: There is no 线 in font nullfont!
+Missing character: There is no 与 in font nullfont!
+Missing character: There is no 圆 in font nullfont!
+
+! LaTeX Error: Environment questions undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \begin{questions}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.3 \qs
+        已知点$ M(a,b) $在圆$ O:x^2+y^2=1 $外，则直线$ ax+by=1 $�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 已 in font nullfont!
+Missing character: There is no 知 in font nullfont!
+Missing character: There is no 点 in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+Missing character: There is no 在 in font nullfont!
+Missing character: There is no 圆 in font nullfont!
+Missing character: There is no 外 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 则 in font nullfont!
+Missing character: There is no 直 in font nullfont!
+Missing character: There is no 线 in font nullfont!
+Missing character: There is no 与 in font nullfont!
+Missing character: There is no 圆 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 位 in font nullfont!
+Missing character: There is no 置 in font nullfont!
+Missing character: There is no 关 in font nullfont!
+Missing character: There is no 系 in font nullfont!
+Missing character: There is no 是 in font nullfont!
+! Undefined control sequence.
+l.3 ...$ ax+by=1 $与圆$ O $的位置关系是\xx
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 \onech
+          {相切}{相交}{相离}{不确定}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 相 in font nullfont!
+Missing character: There is no 切 in font nullfont!
+Missing character: There is no 相 in font nullfont!
+Missing character: There is no 交 in font nullfont!
+Missing character: There is no 相 in font nullfont!
+Missing character: There is no 离 in font nullfont!
+Missing character: There is no 不 in font nullfont!
+Missing character: There is no 确 in font nullfont!
+Missing character: There is no 定 in font nullfont!
+! Undefined control sequence.
+l.5 \qs
+        已知圆$ C:x^2+y^2-4x=0 ,l$过点$ P(3,0) $的直线，则\xx
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 已 in font nullfont!
+Missing character: There is no 知 in font nullfont!
+Missing character: There is no 圆 in font nullfont!
+Missing character: There is no 过 in font nullfont!
+Missing character: There is no 点 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 直 in font nullfont!
+Missing character: There is no 线 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 则 in font nullfont!
+! Undefined control sequence.
+l.5 ...-4x=0 ,l$过点$ P(3,0) $的直线，则\xx
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.6 \fourch
+           {$ l$与$ C $相交}{$ l$与$ C $相切}{$ l$与$ C $相离}{以�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 与 in font nullfont!
+Missing character: There is no 相 in font nullfont!
+Missing character: There is no 交 in font nullfont!
+Missing character: There is no 与 in font nullfont!
+Missing character: There is no 相 in font nullfont!
+Missing character: There is no 切 in font nullfont!
+Missing character: There is no 与 in font nullfont!
+Missing character: There is no 相 in font nullfont!
+Missing character: There is no 离 in font nullfont!
+Missing character: There is no 以 in font nullfont!
+Missing character: There is no 上 in font nullfont!
+Missing character: There is no 三 in font nullfont!
+Missing character: There is no 个 in font nullfont!
+Missing character: There is no 选 in font nullfont!
+Missing character: There is no 项 in font nullfont!
+Missing character: There is no 均 in font nullfont!
+Missing character: There is no 有 in font nullfont!
+Missing character: There is no 可 in font nullfont!
+Missing character: There is no 能 in font nullfont!
+! Undefined control sequence.
+l.7 \qs
+        过点$\left(1,0\right)$且与直线$ x-2y-2=0 $平行的直线方�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 过 in font nullfont!
+Missing character: There is no 点 in font nullfont!
+Missing character: There is no 且 in font nullfont!
+Missing character: There is no 与 in font nullfont!
+Missing character: There is no 直 in font nullfont!
+Missing character: There is no 线 in font nullfont!
+Missing character: There is no 平 in font nullfont!
+Missing character: There is no 行 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 直 in font nullfont!
+Missing character: There is no 线 in font nullfont!
+Missing character: There is no 方 in font nullfont!
+Missing character: There is no 程 in font nullfont!
+Missing character: There is no 是 in font nullfont!
+! Undefined control sequence.
+l.7 ...�线$ x-2y-2=0 $平行的直线方程是\xx
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 \twoch
+          {$ x-2y-1=0$}{$ x-2y+1=0$}{$ 2x+y-2=0$}{$ x+2y-1=0$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{questions}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \end{questions}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> ./zhixianyuyuan.tex
+                       
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 8 strings out of 493005
+ 117 string characters out of 6137956
+ 61634 words of memory out of 5000000
+ 4081 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 18i,2n,12p,104b,58s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
