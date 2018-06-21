@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}定义域}{2}{section.1}
+\contentsline {section}{\numberline {2}单调性}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}单调性的判定方法}{3}{subsection.2.1}
+\contentsline {section}{\numberline {3}奇偶对称}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}奇偶性的判断}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}奇偶性的运算}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}奇偶性常见类型}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}奇偶性的单调性}{6}{subsection.3.4}
+\contentsline {section}{\numberline {4}周期性}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}常用周期性模型}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}对称性和周期性}{9}{subsection.4.2}
+\contentsline {section}{\numberline {5}图象变换}{12}{section.5}
+\contentsline {subsection}{\numberline {5.1}性质}{12}{subsection.5.1}
+\contentsline {section}{\numberline {6}分段函数}{13}{section.6}

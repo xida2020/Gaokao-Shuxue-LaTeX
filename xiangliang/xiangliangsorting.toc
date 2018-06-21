@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}基本概念}{2}{section.1}
+\contentsline {section}{\numberline {2}向量的线性运算}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}加法}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}减法}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}数乘}{3}{subsection.2.3}
+\contentsline {section}{\numberline {3}平面向量基本定理及坐标表示}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}基底}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}坐标表示}{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}平面向量的坐标计算}{4}{subsection.3.3}
+\contentsline {section}{\numberline {4}平面向量的数量积}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}定义}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}数量积相关补充}{5}{subsection.4.2}
+\contentsline {section}{\numberline {5}练习}{7}{section.5}
