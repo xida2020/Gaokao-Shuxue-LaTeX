@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-*.aux
-*.bbl
-*.txt
-*.out
-*.synctex
-*.toc
-*.blg
-=======
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -249,4 +241,4 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
->>>>>>> 4b0ed9406dafc16a2407eda5216adb65940509ad
+
