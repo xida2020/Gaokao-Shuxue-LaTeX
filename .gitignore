@@ -242,3 +242,8 @@ TSWLatexianTemp*
 # generated if using elsarticle.cls
 *.spl
 
+# docx
+*.docx
+*.doc
+*.rar
+*.zip
