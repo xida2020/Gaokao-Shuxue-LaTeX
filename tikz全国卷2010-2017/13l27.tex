@@ -1,0 +1,56 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate (a) at (0,0);
+  \coordinate (b) at (2,0);
+  \coordinate (c) at (2,2);
+  \coordinate (d) at (0,2);
+
+  \draw[thick] (a) -- (b) -- (c) -- (d) -- cycle -- (c);
+  \draw[thick,dashed] (b) -- (d);
+
+  \node at (1,-0.5) {(A)};
+
+  \begin{scope}[xshift=3cm]
+
+  \coordinate (a) at (0,0);
+  \coordinate (b) at (1,0);
+  \coordinate (c) at (2,2);
+  \coordinate (d) at (0,2);
+
+  \draw[thick] (a) -- (b) -- (c) -- (d) -- cycle -- (c);
+  \draw[thick,dashed] (b) -- (d);
+
+  \node at (1,-0.5) {(B)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=6cm]
+
+  \coordinate (a) at (1,0);
+  \coordinate (b) at (2,0);
+  \coordinate (c) at (2,2);
+  \coordinate (d) at (0,2);
+
+  \draw[thick] (a) -- (b) -- (c) -- (d) -- cycle -- (c);
+  \draw[thick,dashed] (b) -- (d);
+
+  \node at (1,-0.5) {(C)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=9cm]
+
+  \coordinate (a) at (1,0);
+  \coordinate (b) at (2,1);
+  \coordinate (c) at (2,2);
+  \coordinate (d) at (0,2);
+
+  \draw[thick] (a) -- (b) -- (c) -- (d) -- cycle -- (c);
+  \draw[thick,dashed] (b) -- (d);
+
+  \node at (1,-0.5) {(D)};
+
+  \end{scope}
+
+%\end{tikzpicture}

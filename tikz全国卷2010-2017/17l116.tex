@@ -1,0 +1,16 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate[label=right:$O$] (o) at (0:0);
+  \coordinate[label=0:$C$] (c) at (0:0.9);
+  \coordinate[label=60:$E$] (e) at (60:2);
+  \coordinate[label=120:$A$] (a) at (120:0.9);
+  \coordinate[label=180:$F$] (f) at (180:2);
+  \coordinate[label=240:$B$] (b) at (240:0.9);
+  \coordinate[label=300:$D$] (d) at (300:2);
+  \draw[dashed] (d) -- (c) -- (e) -- (a) -- (f) -- (b) -- cycle;
+  \draw (0,0) circle (2cm)
+        (a) -- (b) -- (c) -- cycle;
+  \filldraw (0,0) circle (1pt);
+
+%\end{tikzpicture}

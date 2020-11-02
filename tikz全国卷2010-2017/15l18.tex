@@ -1,0 +1,23 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \draw[->] (-1,0) -- (2,0);
+  \draw[->] (0,-1) -- (0,1.2);
+  \node[below] at (2,0) {$x$};
+  \node[left] at (0,1.2) {$y$};
+
+  \foreach \i/\j in {0.25/\tfrac14,1.25/\tfrac54}
+  {
+  \draw (\i,0) -- (\i,0.125);
+  \node[below] at (\i,0) {$\j$};
+  }
+
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=-1:0] plot (\x, {cos((rad(180)*\x+rad(45)) r)});
+  \draw[thick, domain=0:1] plot (\x, {cos((rad(180)*\x+rad(45)) r)});
+  \draw[thick, domain=1:2] plot (\x, {cos((rad(180)*\x+rad(45)) r)});
+
+%\end{tikzpicture}

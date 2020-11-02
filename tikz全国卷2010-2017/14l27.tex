@@ -1,0 +1,26 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \node[end] (s) at (0,5) {开始};
+  \node[inout] (i) at (0,4) {输入 $x,t$};
+  \node[exec] (c) at (0,3) {$M=1$, $S=3$};
+  \node[exec] (c0) at (0,2) {$k=1$};
+  \node[decide] (d) at (0,0.5) {$k\le t$?};
+  \node[exec] (c1) at (-2,-0.8) {$M=\dfrac Mkx$};
+  \node[exec] (c2) at (-2,-2) {$S=M+S$};
+  \node[exec] (c3) at (-2,-3) {$k=k+1$};
+  \node[inout] (o) at (2,-1) {输出 $S$};
+  \node[end] (e) at (2,-2) {结束};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (c);
+  \draw[->] (c) -- (c0);
+  \draw[->] (c0) -- (d);
+  \draw[->] (d) -| node[above left] {否} (o);
+  \draw[->] (d) -| node[above right] {是} (c1);
+  \draw[->] (c1) -- (c2);
+  \draw[->] (c2) -- (c3);
+  \draw[->] (c3) -- (-3.5,-3) |- (0,1.5);
+  \draw[->] (o) -- (e);
+
+%\end{tikzpicture}

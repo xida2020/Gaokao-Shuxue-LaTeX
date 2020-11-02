@@ -1,0 +1,18 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \filldraw[fill=gray] (0,0) rectangle (4.6,1.6);
+  \foreach \i/\j in {0.2/1.3,1.5/2.9,3.1/3.7,3.9/4.4}{
+  \foreach \k in {0,1,2}{
+  \filldraw[fill=lightgray] (\i,0.115+0.495*\k) rectangle (\j,0.115+0.38+.495*\k);
+  }}
+
+  \node[above] at (0.1,0.0575) {E};
+  \node[above] at (3,0.0575+2*0.495) {F};
+  \node[below] at (4.5,0.0575+3*0.495) {G};
+
+  \filldraw (0.1,0.0575) circle (0.5pt)
+            (3,0.0575+2*0.495) circle (0.5pt)
+            (4.5,0.0575+3*0.495) circle (0.5pt);
+
+%\end{tikzpicture}

@@ -1,0 +1,80 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \draw[->] (-4.5,0) -- (4.5,0);
+  \draw[->] (0,-4.5) -- (0,4.5);
+  \node[below] at (4.5,0) {$x$};
+  \node[left] at (0,4.5) {$y$};
+
+  \draw (1,0) -- (1,0.125);
+  \node[below] at (1,0) {$1$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0.18:3.6] plot (\x, {1+\x-1/(\x)});
+  \draw[thick, domain=-0.28:{-4.2}] plot (\x, {1+\x-1/(\x)});
+
+  \node[below] at (0,-4.5) {(A)};
+
+  \begin{scope}[xshift=12cm]
+
+  \draw[->] (-4.5,0) -- (4.5,0);
+  \draw[->] (0,-4.5) -- (0,4.5);
+  \node[below] at (4.5,0) {$x$};
+  \node[left] at (0,4.5) {$y$};
+
+  \draw (1,0) -- (1,0.125);
+  \node[below] at (1,0) {$1$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0.3:4.5] plot (\x, {1+1/(\x)});
+  \draw[thick, domain=-0.3:-4.5] plot (\x, {-1+1/(\x)});
+
+  \node[below] at (0,-4.5) {(B)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=24cm]
+
+  \draw[->] (-4.5,0) -- (4.5,0);
+  \draw[->] (0,-4.5) -- (0,4.5);
+  \node[below] at (4.5,0) {$x$};
+  \node[left] at (0,4.5) {$y$};
+
+  \draw (1,0) -- (1,0.125);
+  \node[below] at (1,0) {$1$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0.18:4.5] plot (\x, {2-1/(\x)});
+  \draw[thick, domain=-0.18:-4.5] plot (\x, {-2-1/(\x)});
+
+  \node[below] at (0,-4.5) {(C)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=36cm]
+
+  \draw[->] (-4.5,0) -- (4.5,0);
+  \draw[->] (0,-4.5) -- (0,4.5);
+  \node[below] at (4.5,0) {$x$};
+  \node[left] at (0,4.5) {$y$};
+
+  \draw (1,0) -- (1,0.125);
+  \node[below] at (1,0) {$1$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0.3:4] plot (\x, {1+\x+sin(\x r)/(\x*\x)});
+  \draw[thick, domain=-0.2:-4.5] plot (\x, {1+\x+sin(\x r)/(\x*\x)});
+
+  \node[below] at (0,-4.5) {(D)};
+
+  \end{scope}
+
+%\end{tikzpicture}

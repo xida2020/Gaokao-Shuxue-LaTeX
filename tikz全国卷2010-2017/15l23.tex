@@ -1,0 +1,15 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \foreach \i/\j in {2004/3.5,2005/6.6,2006/6.8,2007/5.7,2008/4.2,2009/3.1,2010/2.9,2011/3.2,2012/2.4,2013/1.4}{
+  \draw[y=0.5cm,color=gray,line width=0.5cm] (\i-2003,0) -- (\i-2003,\j);
+  \node[below] at (\i-2002.75,0) {\begin{turn}{-60}$\i$ 年\end{turn}};
+  }
+
+  \foreach \j in {1900,2000,...,2700}{
+  \node[left] at (0.5,0.005*\j-0.005*1900) {$\j$};
+  \draw[dashed] (0.5,0.005*\j-0.005*1900) -- (10.5,0.005*\j-0.005*1900);
+  }
+  \draw (0.5,0) rectangle (10.5,4);
+
+%\end{tikzpicture}

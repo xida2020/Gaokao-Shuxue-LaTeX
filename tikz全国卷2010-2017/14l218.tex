@@ -1,0 +1,14 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate[label=left:$A$] (a) at (0,0);
+  \coordinate[label=180:$B$] (b) at (-0.45,-0.45);
+  \coordinate[label=0:$C$] (c) at (1.1,-0.45);
+  \coordinate[label=0:$D$] (d) at (1.55,0);
+  \coordinate[label=90:$E$] (e) at (0.775,0.4);
+  \coordinate[label=90:$P$] (p) at (0,0.8);
+
+  \draw (e) -- (c) -- (p) -- (d) -- (c) -- (b) -- (p);
+  \draw[dashed] (p) -- (a) -- (c) (d) -- (a) -- (b) (a) -- (e);
+
+%\end{tikzpicture}

@@ -1,0 +1,13 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate[label=above right:$A$] (a) at (0,0);
+  \coordinate[label=left:$B$] (b) at (-0.433,-0.25);
+  \coordinate[label=below:$C$] (c) at (0.567,-0.25);
+  \coordinate[label=right:$D$] (d) at (2,0);
+  \coordinate[label=above right:$P$] (p) at (1,1.732);
+
+  \draw (p) -- (b) -- (c) -- (d) -- (p) -- (c);
+  \draw[dashed] (p) -- (a) -- (b) (a) -- (d);
+
+%\end{tikzpicture}

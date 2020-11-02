@@ -1,0 +1,88 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \draw[->] (-3.5,0) -- (4,0);
+  \draw[->] (0,-3.5) -- (0,3.5);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,3.5) {$y$};
+
+  \foreach \i/\t in {rad{-180}/{-\uppi},1,rad{180}/{\uppi}} {
+  \draw (\i,0) -- (\i,0.125);
+  \node[below] at (\i,0) {$\t$};
+  }
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0.8:rad(180)] plot (\x, -{sin(2*\x r)/(1-cos(\x r))});
+  \draw[thick, domain=-0.8:rad(-180)] plot (\x, -{sin(2*\x r)/(1-cos(\x r))});
+
+  \node[below] at (0,-3.5) {(A)};
+
+  \begin{scope}[xshift=9cm]
+
+  \draw[->] (-3.5,0) -- (4,0);
+  \draw[->] (0,-3.5) -- (0,3.5);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,3.5) {$y$};
+
+  \foreach \i/\t in {rad{-180}/{-\uppi},1,rad{180}/{\uppi}} {
+  \draw (\i,0) -- (\i,0.125);
+  \node[below] at (\i,0) {$\t$};
+  }
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0.8:rad(180)] plot (\x, {sin(2*\x r)/(1-cos(\x r))});
+  \draw[thick, domain=-0.8:rad(-180)] plot (\x, {sin(-2*\x r)/(1-cos(\x r))});
+
+  \node[below] at (0,-3.5) {(B)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=18cm]
+
+  \draw[->] (-3.5,0) -- (4,0);
+  \draw[->] (0,-3.5) -- (0,3.5);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,3.5) {$y$};
+
+  \foreach \i/\t in {rad{-180}/{-\uppi},1,rad{180}/{\uppi}} {
+  \draw (\i,0) -- (\i,0.125);
+  \node[below] at (\i,0) {$\t$};
+  }
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0.8:rad(180)] plot (\x, {sin(2*\x r)/(1-cos(\x r))});
+  \draw[thick, domain=-0.8:rad(-180)] plot (\x, {sin(2*\x r)/(1-cos(\x r))});
+
+  \node[below] at (0,-3.5) {(C)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=27cm]
+
+  \draw[->] (-3.5,0) -- (4,0);
+  \draw[->] (0,-3.5) -- (0,3.5);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,3.5) {$y$};
+
+  \foreach \i/\t in {rad{-180}/{-\uppi},1,rad{180}/{\uppi}} {
+  \draw (\i,0) -- (\i,0.125);
+  \node[below] at (\i,0) {$\t$};
+  }
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0.8:rad(180)] plot (\x, {sin(2.4*\x r)/(1-cos(\x r))});
+  \draw[thick, domain=-0.8:rad(-180)] plot (\x, {sin(2.4*\x r)/(1-cos(\x r))});
+
+  \node[below] at (0,-3.5) {(D)};
+
+  \end{scope}
+
+%\end{tikzpicture}

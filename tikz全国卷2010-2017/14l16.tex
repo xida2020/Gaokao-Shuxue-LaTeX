@@ -1,0 +1,99 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \draw[->] (-0.5,0) -- (4,0);
+  \draw[->] (0,-0.5) -- (0,2);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,2) {$y$};
+
+  \foreach \i in {60,120,180}
+  {
+  \draw ({rad(\i)},0) -- ({rad(\i)},0.125);
+  }
+  \node[below] at ({rad(180)},0) {$\uppi$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0:rad(180)] plot (\x, {sin(\x r)});
+
+  \node at (1.75,-1) {(A)};
+
+  \begin{scope}[xshift=6cm]
+
+  \draw[->] (-0.5,0) -- (4,0);
+  \draw[->] (0,-0.5) -- (0,2);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,2) {$y$};
+
+  \foreach \i in {60,120,180}
+  {
+  \draw ({rad(\i)},0) -- ({rad(\i)},0.125);
+  }
+  \node[below] at ({rad(180)},0) {$\uppi$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0:rad(180)] plot (\x, {abs(sin(2*\x r))});
+
+  \node at (1.75,-1) {(B)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=12cm]
+
+  \draw[->] (-0.5,0) -- (4,0);
+  \draw[->] (0,-0.5) -- (0,2);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,2) {$y$};
+
+  \foreach \i in {60,120,180}
+  {
+  \draw ({rad(\i)},0) -- ({rad(\i)},0.125);
+  }
+  \node[below] at ({rad(180)},0) {$\uppi$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0:rad(180)] plot (\x, {0.5*abs(sin(2*\x r))});
+
+  \node at (1.75,-1) {(C)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=18cm]
+
+  \draw[->] (-0.5,0) -- (4,0);
+  \draw[->] (0,-0.5) -- (0,2);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,2) {$y$};
+
+  \foreach \i in {60,120,180}
+  {
+  \draw ({rad(\i)},0) -- ({rad(\i)},0.125);
+  }
+  \node[below] at ({rad(180)},0) {$\uppi$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0:rad(180)] plot (\x, {0.5*sin(\x r)});
+
+  \node at (1.75,-1) {(D)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=25cm,yshift=0.5cm]
+
+  \coordinate[label=0:$A$] (a) at (1.5,0);
+  \coordinate[label=40:$P$] (p) at (40:1.5);
+  \coordinate[label=-90:$M$] (m) at (p |- 0,0);
+  \coordinate[label=-90:$O$] (o) at (0,0);
+
+  \draw[thick] (a) -- (-1.5,0) (o) -- (p) -- (m) -- (40:0.88) (o) circle (1.5);
+
+  \end{scope}
+
+%\end{tikzpicture}

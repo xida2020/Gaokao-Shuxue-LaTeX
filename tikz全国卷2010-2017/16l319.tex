@@ -1,0 +1,15 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate[label=45:$A$] (a) at (0,0);
+  \coordinate[label=180:$B$] (b) at (-2.7906,-0.7906);
+  \coordinate[label=-90:$C$] (c) at (1.2094,-0.7906);
+  \coordinate[label=0:$D$] (d) at (3,0);
+  \coordinate[label=90:$P$] (p) at (0,4);
+  \coordinate[label=90:$M$] (m) at (2,0);
+  \coordinate[label=0:$N$] (n) at (0.6047,1.6047);
+
+  \draw (p) -- (b) -- (c) -- (d)  -- cycle -- (c) (b) -- (n);
+  \draw[dashed] (m) -- (n)  (p) -- (a) -- (b) -- (m) -- (c) -- (a) -- (d);
+
+%\end{tikzpicture}

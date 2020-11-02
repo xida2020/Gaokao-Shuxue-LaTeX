@@ -1,0 +1,25 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \draw[->] ({-rad(60)},0) -- (2,0);
+  \draw[->] (0,-2.5) -- (0,2.5);
+  \node[below] at (2,0) {$x$};
+  \node[left] at (0,2.5) {$y$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw ({-rad(30)},0) -- ({-rad(30)},0.125);
+  \node[below left] at ({-rad(30)},0) {$-\tfrac{\uppi}6$};
+  \draw ({rad(60)},0) -- ({rad(60)},0.125);
+  \node[below] at ({rad(60)},0) {$\tfrac{\uppi}3$};
+
+  \draw (0,2) -- (0.125,2);
+  \node[left] at (0,2) {$2$};
+  \draw (0,-2) -- (0.125,-2);
+  \node[below left] at (0,-2) {$-2$};
+
+  \draw[thick, domain=-rad(60):rad(15)] plot (\x, {2*sin((2*\x-rad(30)) r)});
+  \draw[thick, domain=rad(15):rad(90)] plot (\x, {2*sin((2*\x-rad(30)) r)});
+
+  \draw[dashed] ({-rad(30)},0) |- (0,-2) ({rad(60)},0) |- (0,2);
+
+%\end{tikzpicture}

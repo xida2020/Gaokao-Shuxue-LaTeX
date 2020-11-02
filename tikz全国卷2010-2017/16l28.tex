@@ -1,0 +1,22 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \node[end] (s) at (0,5) {开始};
+  \node[inout] (i) at (0,4) {输入 $x,n$};
+  \node[exec] (c) at (0,3) {$k=0,s=0$};
+  \node[inout] (i0) at (0,2) {输入 $a$};
+  \node[exec] (c0) at (0,1) {$s=s\cdot x+a$, $k=k+1$};
+  \node[decide] (d) at (0,-0.5) {$k>n$?};
+  \node[inout] (o) at (0,-2) {输出 $s$};
+  \node[end] (e) at (0,-3) {结束};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (c);
+  \draw[->] (c) -- (i0);
+  \draw[->] (i0) -- (c0);
+  \draw[->] (c0) -- (d);
+  \draw[->] (d) -- node[right] {是} (o);
+  \draw[->] (d) -| node[above left] {否} (3,2.5) -- (0,2.5);
+  \draw[->] (o) -- (e);
+
+%\end{tikzpicture}

@@ -1,0 +1,20 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate[label=left:$A$] (a) at (0,0);
+  \coordinate[label=0:$B$] (b) at (2,0);
+  \coordinate[label=0:$C$] (c) at (2.44,0.44);
+  \coordinate[label=180:$D$] (d) at (0.44,0.44);
+  \coordinate[label=left:$A_1$] (a1) at (0,1);
+  \coordinate[label=0:$B_1$] (b1) at (2,1);
+  \coordinate[label=0:$C_1$] (c1) at (2.44,1.44);
+  \coordinate[label=180:$D_1$] (d1) at (0.44,1.44);
+  \coordinate[label=above:$E$] (e) at (0.5,1);
+  \coordinate[label=90:$F$] (f) at (0.94,1.44);
+
+  \draw (a) rectangle (b1) -- (c1) -- (c) -- (b) (c1) -- (d1) -- (a1);
+  \draw[dashed] (a) -- (d) -- (c) (d) -- (d1);
+
+  \filldraw (e) circle (1pt) (f) circle (1pt);
+
+%\end{tikzpicture}

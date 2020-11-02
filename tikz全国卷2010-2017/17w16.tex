@@ -1,0 +1,104 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0);
+  \coordinate[label=right:$B$] (C) at (5.4,1.4);
+  \coordinate (D) at (1.4,1.4);
+
+  \coordinate[label=left:$A$] (A1) at (0,4);
+  \coordinate (B1) at (4,4);
+  \coordinate (C1) at (5.4,5.4);
+  \coordinate (D1) at (1.4,5.4);
+
+  \coordinate[label=below:$M$] (m1) at (2,0);
+  \coordinate[label=left:$N$] (n1) at (0.7,0.7);
+  \coordinate[label=left:$Q$] (q1) at (0,2);
+
+  \draw (A1) -- (A) -- (B) -- (C) -- (C1) -- (B1) -- (A1) -- (D1) -- (C1)
+        (B) -- (B1)
+        (m1) -- (q1);
+  \draw[dashed] (A) -- (D)
+        (A1) -- (C) -- (D) -- (D1)
+        (m1) -- (n1) -- (q1);
+
+  \node[below] at (2.7,-0.5) {A.};
+
+  \begin{scope}[xshift=8cm]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0);
+  \coordinate (C) at (5.4,1.4);
+  \coordinate (D) at (1.4,1.4);
+
+  \coordinate[label=left:$A$] (A1) at (0,4);
+  \coordinate (B1) at (4,4);
+  \coordinate[label=right:$B$] (C1) at (5.4,5.4);
+  \coordinate (D1) at (1.4,5.4);
+
+  \coordinate[label=below:$M$] (m2) at (2,0);
+  \coordinate[label=above:$N$] (n2) at (2,4);
+  \coordinate[label=right:$Q$] (q2) at (4.7,0.7);
+
+  \draw (C1) -- (A1) -- (A) -- (B) -- (C) -- (C1) -- (B1) -- (A1) -- (D1) -- (C1)
+        (B) -- (B1)
+        (m2) -- (n2);
+  \draw[dashed] (A) -- (D)
+        (C) -- (D) -- (D1)
+        (n2) -- (q2) -- (m2);
+
+  \node[below] at (2.7,-0.5) {B.};
+
+  \end{scope}
+
+  \begin{scope}[xshift=16cm]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0);
+  \coordinate (C) at (5.4,1.4);
+  \coordinate[label=above right:$B$] (D) at (1.4,1.4);
+
+  \coordinate[label=left:$A$] (A1) at (0,4);
+  \coordinate (B1) at (4,4);
+  \coordinate (C1) at (5.4,5.4);
+  \coordinate (D1) at (1.4,5.4);
+
+  \coordinate[label=right:$M$] (m3) at (4,2);
+  \coordinate[label=below:$N$] (n3) at (0.7,0.7);
+  \coordinate[label=right:$Q$] (q3) at (4.7,0.7);
+
+  \draw (A1) -- (A) -- (B) -- (C) -- (C1) -- (B1) -- (A1) -- (D1) -- (C1)
+        (B) -- (B1)
+        (m3) -- (q3);
+  \draw[dashed] (A) -- (D) -- (A1)
+        (C) -- (D) -- (D1)
+        (m3) -- (n3) -- (q3);
+
+  \node[below] at (2.7,-0.5) {C.};
+
+  \end{scope}
+
+  \begin{scope}[xshift=24cm]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0);
+  \coordinate[label=below right:$B$] (C) at (5.4,1.4);
+  \coordinate (D) at (1.4,1.4);
+
+  \coordinate (A1) at (0,4);
+  \coordinate (B1) at (4,4);
+  \coordinate (C1) at (5.4,5.4);
+  \coordinate[label=above left:$A$] (D1) at (1.4,5.4);
+
+  \coordinate[label=left:$M$] (m4) at (1.4,3.4);
+  \coordinate[label=above:$N$] (n4) at (2,4);
+  \coordinate[label=right:$Q$] (q4) at (4,2);
+
+  \draw (A1) -- (A) -- (B) -- (C) -- (C1) -- (B1) -- (A1) -- (D1) -- (C1)
+        (B) -- (B1)
+        (q4) -- (n4);
+  \draw[dashed] (A) -- (D) -- (D1) -- (C) -- (D)
+        (n4) -- (m4) -- (q4);
+
+  \node[below] at (2.7,-0.5) {D.};
+
+  \end{scope}
+
+%\end{tikzpicture}

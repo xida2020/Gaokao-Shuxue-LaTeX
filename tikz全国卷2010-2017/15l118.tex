@@ -1,0 +1,16 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate[label=-90:$A$] (a) at (-1,0.5);
+  \coordinate[label=-90:$B$] (b) at (0,0);
+  \coordinate[label=-90:$C$] (c) at (2.5,0);
+  \coordinate[label=-90:$D$] (d) at (1.5,0.5);
+  \coordinate[label=90:$E$] (e) at (0,1.6);
+  \coordinate[label=90:$F$] (f) at (1.5,0.5+0.8);
+  \coordinate (g) at (0.9,1.1);
+  \coordinate (h) at (1.5,0.5+0.1);
+
+  \draw (b) -- (c) -- (e) -- (a) -- cycle -- (e) (c) -- (f) -- (g)  (f) -- (h);
+  \draw[dashed] (g) -- (a) -- (c) -- (d) -- (h) (d) -- (a);
+
+%\end{tikzpicture}

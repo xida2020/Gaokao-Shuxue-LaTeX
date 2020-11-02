@@ -1,0 +1,30 @@
+% -*- coding: UTF-8 -*-
+
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{tikz}
+
+
+\begin{document}
+\begin{tikzpicture}
+  \node[end] (s) at (0,5) {开始};
+  \node[inout] (i) at (0,4) {输入 $N$};
+  \node[exec] (c) at (0,3) {$k=1,S=0$};
+  \node[exec] (c0) at (0,2) {$S=S+\tfrac1{k(k+1)}$};
+  \node[exec] (c1) at (3,2) {$k=k+1$};
+  \node[decide] (d) at (0,0.5) {$k<N$?};
+  \node[inout] (o) at (0,-1) {输出 $S$};
+  \node[end] (e) at (0,-2) {结束};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (c);
+  \draw[->] (c) -- (c0);
+  \draw[->] (c0) -- (d);
+  \draw[->] (d) -- node[right] {否} (o);
+  \draw[->] (d) -| node[above left] {是} (c1);
+  \draw[->] (c1) |- (0,2.6);
+  \draw[->] (o) -- (e);
+
+\end{tikzpicture}
+
+\end{document}

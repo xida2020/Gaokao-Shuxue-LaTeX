@@ -1,0 +1,92 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \draw[->] (-3.5,0) -- (4,0);
+  \draw[->] (0,-1) -- (0,2.5);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,2.5) {$y$};
+  \node[below right] at (0,0) {$O$};
+
+  \draw ({-rad(180)},0) -- ({-rad(180)},0.125);
+  \node[below] at ({-rad(180)},0) {$-\uppi$};
+  \draw ({rad(180)},0) -- ({rad(180)},0.125);
+  \node[above] at ({rad(180)},0) {$\uppi$};
+
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+
+  \draw[thick, domain=-rad(180):0] plot (\x, {(cos(\x r)-1)*sin(\x r)});
+  \draw[thick, domain=0:rad(180)] plot (\x, {(cos(\x r)-1)*sin(\x r)});
+
+  \node at (0,-1.75) {(A)};
+
+  \begin{scope}[xshift=9cm]
+
+  \draw[->] (-3.5,0) -- (4,0);
+  \draw[->] (0,-1) -- (0,2.5);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,2.5) {$y$};
+  \node[below right] at (0,0) {$O$};
+
+  \draw ({-rad(180)},0) -- ({-rad(180)},0.125);
+  \node[below] at ({-rad(180)},0) {$-\uppi$};
+  \draw ({rad(180)},0) -- ({rad(180)},0.125);
+  \node[below] at ({rad(180)},0) {$\uppi$};
+
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+
+  \draw[thick, domain=-rad(180):0] plot (\x, {sin(\x r)+(sin(\x r))^2});
+  \draw[thick, domain=0:rad(180)] plot (\x, {sin(\x r)+(sin(\x r))^2});
+
+  \node at (0,-1.75) {(B)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=18cm]
+
+  \draw[->] (-3.5,0) -- (4,0);
+  \draw[->] (0,-1) -- (0,2.5);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,2.5) {$y$};
+  \node[below right] at (0,0) {$O$};
+
+  \draw ({-rad(180)},0) -- ({-rad(180)},0.125);
+  \node[below] at ({-rad(180)},0) {$-\uppi$};
+  \draw ({rad(180)},0) -- ({rad(180)},0.125);
+  \node[below] at ({rad(180)},0) {$\uppi$};
+
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+
+  \draw[thick, domain=-rad(180):0] plot (\x, {(1-cos(\x r))*sin(\x r)});
+  \draw[thick, domain=0:rad(180)] plot (\x, {(1-cos(\x r))*sin(\x r)});
+
+  \node at (0,-1.75) {(C)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=27cm]
+
+  \draw[->] (-3.5,0) -- (4,0);
+  \draw[->] (0,-1) -- (0,2.5);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,2.5) {$y$};
+  \node[below right] at (0,0) {$O$};
+
+  \draw ({-rad(180)},0) -- ({-rad(180)},0.125);
+  \node[below] at ({-rad(180)},0) {$-\uppi$};
+  \draw ({rad(180)},0) -- ({rad(180)},0.125);
+  \node[below] at ({rad(180)},0) {$\uppi$};
+
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+
+  \draw[thick, domain=-rad(180):0] plot (\x, {(cos(\x r)+1)*sin(\x r)});
+  \draw[thick, domain=0:rad(180)] plot (\x, {(cos(\x r)+1)*sin(\x r)});
+
+  \node at (0,-1.75) {(D)};
+  
+  \end{scope}
+
+%\end{tikzpicture}

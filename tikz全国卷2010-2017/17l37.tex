@@ -1,0 +1,24 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \node[end] (s) at (0,7) {开始};
+  \node[inout] (i) at (0,6) {输入 $N$};
+  \node[exec] (c0) at (0,5) {$t=1,M=100,S=0$};
+  \node[decide] (d) at (0,3.5) {$t\le N$?};
+  \node[exec] (c1) at (0,2) {$S=S+M$};
+  \node[exec] (c2) at (0,1) {$M=-\dfrac M{10}$};
+  \node[exec] (c3) at (0,0) {$t=t+1$};
+  \node[inout] (o) at (2.5,2) {输出 $S$};
+  \node[end] (e) at (2.5,1) {结束};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (c0);
+  \draw[->] (c0) -- (d);
+  \draw[->] (d) -| node[above left] {否} (o);
+  \draw[->] (d) -- node[right] {是} (c1);
+  \draw[->] (c1) -- (c2);
+  \draw[->] (c2) -- (c3);
+  \draw[->] (c3) -| (-2,4.5) -- (0,4.5);
+  \draw[->] (o) -- (e);
+
+%\end{tikzpicture}

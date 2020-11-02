@@ -1,0 +1,26 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \node[end] (s) at (-2,0) {开始};
+  \node[inout] (i) at (0.5,0) {输入 $a,b,k$};
+  \node[exec] (c) at (3,0) {$n=1$};
+  \node[exec] (c0) at (4,-2) {$n=n+1$};
+  \node[exec] (c1) at (6.5,-2) {$b=M$};
+  \node[exec] (c2) at (8.5,-2) {$a=b$};
+  \node[exec] (c3) at (11,-2) {$M=a+\dfrac1b$};
+  \node[decide] (d) at (11,0) {$n\le k$?};
+  \node[inout] (o) at (14,0) {输出 $M$};
+  \node[end] (e) at (16,0) {结束};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (c);
+  \draw[->] (c) -- (d);
+  \draw[->] (c3) -- (c2);
+  \draw[->] (c2) -- (c1);
+  \draw[->] (c1) -- (c0);
+  \draw[->] (c0) -- (c0 |- 0,0);
+  \draw[->] (d) -- node[below] {否} (o);
+  \draw[->] (d) -- node[right] {是} (c3);
+  \draw[->] (o) -- (e);
+
+%\end{tikzpicture}

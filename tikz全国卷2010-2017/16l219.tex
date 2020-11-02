@@ -1,0 +1,17 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate[label=left:$A$] (a) at (-0.8,0.3);
+  \coordinate[label=left:$B$] (b) at (-1.6,-0.3);
+  \coordinate[label=below:$C$] (c) at (0.8,-0.3);
+  \coordinate[label=right:$D$] (d) at (1.6,0.3);
+  \coordinate[label=above left:$E$] (e) at (-0.2,0.3);
+  \coordinate[label=right:$F$] (f) at (0.96,-0.18);
+  \coordinate[label=below:$H$] (h) at (0.38,0.06);
+  \coordinate[label=below:$O$] (o) at (0,0);
+  \coordinate[label=left:$D'$] (d0) at (0,1.85);
+
+  \draw (d0) -- (b) -- (c) -- (f) -- cycle -- (c);
+  \draw[dashed] (c) -- (a) -- (b) -- (d) -- (f) -- (e) -- (d0) -- (a) -- (d) (o) -- (d0) -- (h); 
+
+%\end{tikzpicture}

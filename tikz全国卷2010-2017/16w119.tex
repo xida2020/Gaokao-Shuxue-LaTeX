@@ -1,0 +1,18 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \draw[->] (0.25,0) -- (0.375,0.125) -- (0.5,-0.125) -- (0.625,0) -- (8.5,0);
+  \draw[->] (0.25,0) -- (0.25,3);
+  \foreach \i/\j in {16/6,17/16,18/24,19/24,20/20,21/10}{
+  \draw[line width=0.5cm] (\i-14,0) -- (\i-14,0.1*\j);
+  \draw[dashed] (0.25,0.1*\j) -- (\i-14,0.1*\j);
+  \node[below] at (\i-14,0) {$\i$};
+  \node[left] at (0.25,0.1*\j) {$\j$};
+  }
+
+  \node[below left] at (0.25,0) {$0$};
+
+  \node[left] at (0.25,2.8) {频数};
+  \node[below] at (8.5,0) {更换的易损零件数};
+
+%\end{tikzpicture}

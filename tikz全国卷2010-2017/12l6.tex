@@ -1,0 +1,32 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \node[end] (s) at (0,5) {开始};
+  \node[inout] (i) at (0,4) {输入 $N, a_1, a_2, \dots, a_N$};
+  \node[exec] (c) at (0,3) {$k=1,A=a_1, B=a_1$};
+  \node[exec] (c0) at (0,2) {$x=a_k$};
+  \node[exec] (c1) at (-2.5,-2.5) {$B=x$};
+  \node[exec] (c2) at (2.5,-0.5) {$A=x$};
+  \node[exec] (c3) at (4,2) {$k=k+1$};
+  \node[decide] (d) at (0,0.5) {$x>A$?};
+  \node[decide] (d0) at (0,-1.5) {$x<B$?};
+  \node[decide] (d1) at (0,-4) {$k\ge N$?};
+  \node[inout] (o) at (0,-5.5) {输出 $A,B$};
+  \node[end] (e) at (0,-6.5) {结束};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (c);
+  \draw[->] (c) -- (c0);
+  \draw[->] (c0) -- (d);
+  \draw[->] (d) -- node[left] {否} (d0);
+  \draw[->] (d0) -- node[left,near start] {否} (d1);
+  \draw[->] (d1) -- node[right] {是} (o);
+  \draw[->] (d1) -| node[above left] {否} (c3);
+  \draw[->] (d) -| node[above left] {是} (c2);
+  \draw[->] (d0) -| node[above right] {是} (c1);
+  \draw[->] (c3) |- (0,2.5);
+  \draw[->] (c2) |- (0,-3);
+  \draw[->] (c1) |- (0,-3);
+  \draw[->] (o) -- (e);
+
+%\end{tikzpicture}

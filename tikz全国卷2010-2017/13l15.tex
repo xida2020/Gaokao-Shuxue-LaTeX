@@ -1,0 +1,20 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \node[end] (s) at (0,5) {开始};
+  \node[inout] (i) at (0,4) {输入 $t$};
+  \node[decide] (d) at (0,2.5) {$t<1$?};
+  \node[exec] (c) at (-2,1.5) {$S=3t$};
+  \node[exec] (c0) at (2,1.5) {$S=4t-t^2$};
+  \node[inout] (o) at (0,0) {输出 $s$};
+  \node[end] (e) at (0,-1) {结束};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (d);
+  \draw (0,0.75) -| (c0);
+  \draw[->] (c) |- (0,0.75) -- (o);
+  \draw[->] (d) -| node[above right] {是} (c);
+  \draw[->] (d) -| node[above left] {否} (c0);
+  \draw[->] (o) -- (e);
+
+%\end{tikzpicture}

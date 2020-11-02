@@ -1,0 +1,105 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \draw[->] (0,0) -- (4,0);
+  \draw[->] (0,0) -- (0,4);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,4) {$y$};
+
+  \foreach \i/\j in {45/\tfrac{\uppi}4,90/\tfrac{\uppi}2,135/\tfrac{3\uppi}4,180/\uppi}
+  {
+  \draw ({rad(\i)},0) -- ({rad(\i)},0.125);
+  \node at ({rad(\i)},-0.5) {$\j$};
+  }
+  \draw (0,2) -- (0.125,2);
+  \node[left] at (0,2) {$2$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick] (0,2) -- (1.57*0.5,3.236) -- (1.57,2.828) -- (1.5*1.57,3.236) -- (3.14,2);
+
+  \node at (1.57,-1.5) {(A)};
+
+  \begin{scope}[xshift=5cm]
+
+  \draw[->] (0,0) -- (4,0);
+  \draw[->] (0,0) -- (0,4);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,4) {$y$};
+
+  \foreach \i/\j in {45/\tfrac{\uppi}4,90/\tfrac{\uppi}2,135/\tfrac{3\uppi}4,180/\uppi}
+  {
+  \draw ({rad(\i)},0) -- ({rad(\i)},0.125);
+  \node at ({rad(\i)},-0.5) {$\j$};
+  }
+  \draw (0,2) -- (0.125,2);
+  \node[left] at (0,2) {$2$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0:rad(45)] plot (\x, {sqrt(4+tan(\x r)^2)+tan(\x r)});
+  \draw[thick, domain=rad(45):rad(135)] plot (\x, {(sqrt(1+sin(\x r)^2+sin(2*\x r))+sqrt(1+sin(\x r)^2-sin(2*\x r)))/(sin(\x r))});
+  \draw[thick, domain=rad(135):rad(180)] plot (\x, {sqrt(4+tan(\x r)*tan(\x r))-tan(\x r)});
+
+  \node at (1.57,-1.5) {(B)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=10cm]
+
+  \draw[->] (0,0) -- (4,0);
+  \draw[->] (0,0) -- (0,4);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,4) {$y$};
+
+  \foreach \i/\j in {45/\tfrac{\uppi}4,90/\tfrac{\uppi}2,135/\tfrac{3\uppi}4,180/\uppi}
+  {
+  \draw ({rad(\i)},0) -- ({rad(\i)},0.125);
+  \node at ({rad(\i)},-0.5) {$\j$};
+  }
+  \draw (0,2) -- (0.125,2);
+  \node[left] at (0,2) {$2$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick] (0,2) -- (1.57,2.828) -- (3.14,2);
+
+  \node at (1.57,-1.5) {(C)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=15cm]
+
+  \draw[->] (0,0) -- (4,0);
+  \draw[->] (0,0) -- (0,4);
+  \node[below] at (4,0) {$x$};
+  \node[left] at (0,4) {$y$};
+
+  \foreach \i/\j in {45/\tfrac{\uppi}4,90/\tfrac{\uppi}2,135/\tfrac{3\uppi}4,180/\uppi}
+  {
+  \draw ({rad(\i)},0) -- ({rad(\i)},0.125);
+  \node at ({rad(\i)},-0.5) {$\j$};
+  }
+  \draw (0,2) -- (0.125,2);
+  \node[left] at (0,2) {$2$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick] (3.14,2) arc (0:180:1.57);
+
+  \node at (1.57,-1.5) {(D)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=21cm]
+
+  \coordinate[label=-135:$A$] (a) at (0,0);
+  \coordinate[label=-45:$B$] (b) at (4,0);
+  \coordinate[label=45:$C$] (c) at (4,2);
+  \coordinate[label=135:$D$] (d) at (0,2);
+  \coordinate[label=90:$P$] (p) at (1,2);
+  \coordinate[label=-90:$O$] (o) at (2,0);
+
+  \draw[thick] (a) -- (p) -- (b) -- (c) -- (d) -- (a) -- (b) (o) -- (p) (2.2,0) arc (0:117:0.2);
+
+  \node[above right] at (o) {$x$};
+
+  \end{scope}
+
+%\end{tikzpicture}

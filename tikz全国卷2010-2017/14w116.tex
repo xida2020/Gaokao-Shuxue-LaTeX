@@ -1,0 +1,13 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate[label=-90:$A$] (a) at (1,0);
+  \coordinate[label=-90:$B$] (b) at (2,0);
+  \coordinate[label=90:$C$] (c) at (2,1);
+  \coordinate[label=90:$M$] (m) at (0,1.7);
+  \coordinate[label=-90:$N$] (n) at (0,0.5);
+
+  \draw (c) -- (m) -- (n) -- (a) -- (b) -- (c) -- (a) -- (m);
+  \draw[dashed] (b) -- (n);
+
+%\end{tikzpicture}

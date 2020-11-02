@@ -1,0 +1,23 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \node[end] (s) at (0,5) {开始};
+  \node[inout] (i) at (0,4) {输入 $a,b$};
+  \node[decide] (d0) at (0,2.67) {$a\ne b$?};
+  \node[decide] (d) at (-2.5,1.33) {$a>b$?};
+  \node[exec] (c0) at (-4,0) {$a=a-b$};
+  \node[exec] (c) at (-1,0) {$b=b-a$};
+  \node[inout] (o) at (1.5,1.33) {输出 $a$};
+  \node[end] (e) at (1.5,0) {结束};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (d0);
+  \draw[->] (d0) -| node[above] {是} (d);
+  \draw[->] (d0) -| node[above] {否} (o);
+  \draw[->] (o) -- (e);
+  \draw[->] (d) -| node[above] {是} (c0);
+  \draw[->] (d) -| node[above] {否} (c);
+  \draw[->] (-2.5,-0.625) |- (-5.5,-1) |- (0,3.5);
+  \draw (c0) |- (-1,-0.625) -- (c);
+
+%\end{tikzpicture}

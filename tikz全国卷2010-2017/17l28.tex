@@ -1,0 +1,24 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \node[end] (s) at (0,9) {开始};
+  \node[inout] (i) at (0,8) {输入 $a$};
+  \node[exec] (c0) at (0,7) {$S=0,K=1$};
+  \node[decide] (d) at (0,5.5) {$K\le6$?};
+  \node[exec] (c1) at (0,4) {$S=S+a\cdot K$};
+  \node[exec] (c2) at (0,3) {$a=-a$};
+  \node[exec] (c3) at (0,2) {$K=K+1$};
+  \node[inout] (o) at (0,1) {输出 $S$};
+  \node[end] (e) at (0,0) {结束};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (c0);
+  \draw[->] (c0) -- (d);
+  \draw[->] (d) -| node[above left] {否} (2,1.5) -| (o);
+  \draw[->] (d) -- node[right] {是} (c1);
+  \draw[->] (c1) -- (c2);
+  \draw[->] (c2) -- (c3);
+  \draw[->] (c3) -| (-2,6.5) -- (0,6.5);
+  \draw[->] (o) -- (e);
+
+%\end{tikzpicture}

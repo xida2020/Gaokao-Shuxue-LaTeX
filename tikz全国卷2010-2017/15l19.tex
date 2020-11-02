@@ -1,0 +1,22 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \node[end] (s) at (0,5) {开始};
+  \node[inout] (i) at (0,4) {输入 $t$};
+  \node[exec] (c) at (0,3) {$S=1,n=0,m=\tfrac12$};
+  \node[exec] (c0) at (0,2) {$S=S-m$};
+  \node[exec] (c1) at (0,1) {$m=\tfrac m2, n=n+1$};
+  \node[decide] (d) at (0,-.5) {$S>t$?};
+  \node[inout] (o) at (0,-2) {输出 $n$};
+  \node[end] (e) at (0,-3) {结束};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (c);
+  \draw[->] (c) -- (c0);
+  \draw[->] (c0) -- (c1);
+  \draw[->] (c1) -- (d);
+  \draw[->] (d) -- node[right] {否} (o);
+  \draw[->] (d) -| node[above right] {是} (-2.5,2.5) -- (0,2.5);
+  \draw[->] (o) -- (e);
+
+%\end{tikzpicture}

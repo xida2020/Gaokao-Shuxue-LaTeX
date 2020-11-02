@@ -1,0 +1,15 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate[label=above right:$A$] (a) at (0,0);
+  \coordinate[label=left:$B$] (b) at (-0.433,-0.25);
+  \coordinate[label=below:$C$] (c) at (0.567,-0.25);
+  \coordinate[label=right:$D$] (d) at (2,0);
+  \coordinate[label=above right:$P$] (p) at (1,1.732);
+  \coordinate[label=right:$E$] (e) at (1.5,0.866);
+  \coordinate[label=right:$M$] (m) at (0.707+0.293*0.567,0.707*1.732-0.293*0.25);
+
+  \draw (b) -- (m) (p) -- (b) -- (c) -- (d) -- (p) -- (c) -- (e);
+  \draw[dashed] (p) -- (a) -- (d) (m) -- (a) -- (b);
+
+%\end{tikzpicture}

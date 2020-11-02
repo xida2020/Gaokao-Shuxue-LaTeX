@@ -1,0 +1,22 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \draw[->] (0,0) -- (0.09,0.15) -- (0.18,0) -- (8.5,0);
+  \draw[->] (0,0) -- (0,4.5);
+  \foreach \i/\j in {40/0.010,50/0.020,60/0.030,70/0.020,80/0.015,90/0.005}{
+  \draw (0.1*\i-3,0) rectangle (0.1*\i-3+1,100*\j);
+  \node[below] at (0.1*\i-3,0) {$\i$};
+  \draw[dashed] (0,100*\j) -- (0.1*\i-3,100*\j);
+  \node[left] at (0,100*\j) {$\j$};
+  }
+  \foreach \j in {0.025,0.035,0.040}{
+  \node[left] at (0,100*\j) {$\j$};
+  }
+  \node[below] at (0.1*100-3,0) {$100$};
+  \node[below left] at (0,0) {$O$};
+
+  \node at (4,5) {A~地区用户满意度评分的频率分布直方图};
+  \node[left] at (0,4.5) {频率/组距};
+  \node[below] at (8.5,0) {满意度评分};
+
+%\end{tikzpicture}

@@ -1,0 +1,22 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \node[end] (s) at (0,5) {开始};
+  \node[inout] (i) at (0,4) {输入 $N$};
+  \node[exec] (c) at (0,3) {$k=1,p=1$};
+  \node[exec] (c0) at (0,2) {$p=p\cdot k$};
+  \node[exec] (c1) at (2.5,2) {$k=k+1$};
+  \node[decide] (d) at (0,0.5) {$k<N$?};
+  \node[inout] (o) at (0,-1) {输出 $p$};
+  \node[end] (e) at (0,-2) {结束};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (c);
+  \draw[->] (c) -- (c0);
+  \draw[->] (c0) -- (d);
+  \draw[->] (d) -- node[right] {否} (o);
+  \draw[->] (d) -| node[above left] {是} (c1);
+  \draw[->] (c1) |- (0,2.5);
+  \draw[->] (o) -- (e);
+
+%\end{tikzpicture}

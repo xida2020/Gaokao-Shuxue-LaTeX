@@ -1,0 +1,15 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate[label=-90:$A$] (a) at (-1,0.5);
+  \coordinate[label=-90:$B$] (b) at (0,0);
+  \coordinate[label=-90:$C$] (c) at (2.5,0);
+  \coordinate[label=-90:$D$] (d) at (1.5,0.5);
+  \coordinate[label=90:$E$] (e) at (0,1.6);
+  \coordinate[label=-90:$G$] (g) at (0.75,0.25);
+
+
+  \draw (b) -- (c) -- (e) -- (a) -- cycle -- (e);
+  \draw[dashed] (b) -- (d) -- (c) -- (a) -- (d) -- (e) -- (g);
+
+%\end{tikzpicture}

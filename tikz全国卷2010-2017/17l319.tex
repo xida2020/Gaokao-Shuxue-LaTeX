@@ -1,0 +1,12 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \coordinate[label=right:$E$] (e) at (3.2,2.2);
+  \coordinate[label=below:$A$] (a) at (0,0);
+  \coordinate[label=right:$B$] (b) at (5.4,0.8);
+  \coordinate[label=above:$C$] (c) at (2,1.8);
+  \coordinate[label=above:$D$] (d) at (1,3.6);
+  \draw[dashed] (b) -- (c) -- (d) (a) -- (c) -- (e);
+  \draw (e) -- (a) -- (b) -- (d) -- (a);
+
+%\end{tikzpicture}

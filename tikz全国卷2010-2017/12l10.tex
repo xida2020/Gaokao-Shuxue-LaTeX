@@ -1,0 +1,80 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \draw[->] (-4,0) -- (8,0);
+  \draw[->] (0,-8) -- (0,8);
+  \node[below] at (8,0) {$x$};
+  \node[left] at (0,8) {$y$};
+
+  \draw (1,0) -- (1,0.125);
+  \node[below] at (1,0) {$1$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0.6:7.5] plot (\x, {-1/(ln(\x+1)-\x)});
+  \draw[thick, domain=-0.99999:-0.43] plot (\x, {-1/(ln(\x+1)-\x)});
+
+  \node at (2,-8.5) {(A)};
+
+  \begin{scope}[xshift=14cm]
+
+  \draw[->] (-4,0) -- (8,0);
+  \draw[->] (0,-8) -- (0,8);
+  \node[below] at (8,0) {$x$};
+  \node[left] at (0,8) {$y$};
+
+  \draw (1,0) -- (1,0.125);
+  \node[below] at (1,0) {$1$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0.6:7.5] plot (\x, {1/(ln(\x+1)-\x)});
+  \draw[thick, domain=-0.99999:-0.43] plot (\x, {1/(ln(\x+1)-\x)});
+
+  \node at (2,-8.5) {(B)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=28cm]
+
+  \draw[->] (-4,0) -- (8,0);
+  \draw[->] (0,-8) -- (0,8);
+  \node[below] at (8,0) {$x$};
+  \node[left] at (0,8) {$y$};
+
+  \draw (1,0) -- (1,0.125);
+  \node[below] at (1,0) {$1$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=0.6:7.5] plot (\x, {1/(ln(\x+1)-\x)});
+  \draw[thick, domain=-0.99999:-0.43] plot (\x, {-1/(ln(\x+1)-\x)});
+
+  \node at (2,-8.5) {(C)};
+
+  \end{scope}
+
+  \begin{scope}[xshift=42cm]
+
+  \draw[->] (-4,0) -- (8,0);
+  \draw[->] (0,-8) -- (0,8);
+  \node[below] at (8,0) {$x$};
+  \node[left] at (0,8) {$y$};
+
+  \draw (1,0) -- (1,0.125);
+  \node[below] at (1,0) {$1$};
+  \draw (0,1) -- (0.125,1);
+  \node[left] at (0,1) {$1$};
+  \node[below left] at (0,0) {$O$};
+
+  \draw[thick, domain=1.6:7.5] plot (\x, {1/(ln(\x)-\x+1)});
+  \draw[thick, domain=0.00001:0.57] plot (\x, {1/(ln(\x)-\x+1)});
+
+  \node at (2,-8.5) {(D)};
+
+  \end{scope}
+
+%\end{tikzpicture}

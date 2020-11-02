@@ -1,0 +1,20 @@
+% -*- coding: UTF-8 -*-
+%\begin{tikzpicture}
+
+  \node[end] (s) at (0,5) {开始};
+  \node[inout] (i) at (0,4) {输入 $n=0$};
+  \node[exec] (c) at (0,3) {$A=3^n-2^n$};
+  \node[decide] (d) at (0,2) {\hspace*{2em}};
+  \node[inout] (o) at (0,1) {输出 $n$};
+  \node[end] (e) at (0,0) {结束};
+  \node[exec] (c0) at (-2,3) {{\color{white} $A^n=$}};
+
+  \draw[->] (s) -- (i);
+  \draw[->] (i) -- (c);
+  \draw[->] (c) -- (d);
+  \draw[->] (d) -- node[left] {否} (o);
+  \draw[->] (o) -- (e);
+  \draw[->] (d) -| node[below right] {是} (c0);
+  \draw[->] (c0) |- (0,3.5);
+
+%\end{tikzpicture}
