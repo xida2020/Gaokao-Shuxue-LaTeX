@@ -1,0 +1,9 @@
+PWD /home/sx/Gaokao-Shuxue-LaTeX/2017moni
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/sx/Gaokao-Shuxue-LaTeX/2017moni/2017ermo.tex
+OUTPUT /home/sx/Gaokao-Shuxue-LaTeX/2017moni/2017ermo.log
+INPUT /home/sx/Gaokao-Shuxue-LaTeX/2017moni/BHCexam.cls
+INPUT /home/sx/Gaokao-Shuxue-LaTeX/2017moni/BHCexam.cls
